@@ -24,7 +24,7 @@ const FriendsList = () => {
       <ul>
         {friends.map((friend) => {
           return (
-            <li>
+            <li key={friend.id}>
               {friend.name} - {friend.age} - {friend.email}
             </li>
           );
